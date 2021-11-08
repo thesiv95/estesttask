@@ -14,7 +14,7 @@ User.init({
     }
 }, {
     sequelize, // DB connection instance
-    modelName: 'User'
+    modelName: 'user' // used for creating tables
 });
 
 module.exports = User;
