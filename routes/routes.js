@@ -1,8 +1,16 @@
 const { Router } = require('express');
 const User = require('../models/User');
+const get10Last = require('../utils/get10last');
 
 const router = new Router();
 
+// Route for testing & debugging get10Last query
+router.get('/', async (req, res) => {
+    const records = await get10Last()
+    return res.status(200).send({ records });
+});
+
+// Add new user to DB
 router.post('/addUser', async (req, res) => {
     try {
         const { name, email } = req.body;
