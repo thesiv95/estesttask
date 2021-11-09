@@ -5,7 +5,7 @@ const get10Last = require('../utils/get10last');
 const router = new Router();
 
 // Route for testing & debugging get10Last query
-router.get('/', async (req, res) => {
+router.get('/last10', async (req, res) => {
     const records = await get10Last()
     return res.status(200).send({ records });
 });
