@@ -6,11 +6,12 @@ This is a socket that pulls 10 last users from DB.
 You can find it in `mock.sql`
 
 ## Env variables
-- **DB_NAME** - database name, `users` if not set
-- **DB_LOGIN** - database server login, `root` if not set
+- **DB_NAME** - database name, `users` if not set;
+- **DB_LOGIN** - database server login, `root` if not set;
 - **DB_PASSWORD** - database server password, blank if not set;
 - **DB_HOST** - database server endpoint, `localhost` if not set;
 - **DB_PORT** - database server port, `3306` if not set (this is a standard one for MySQL).
+- **APP_PORT** - server port, `3000` if not set.
 
 ## Endpoints
 - *GET /last10* - test and debug this user pull function.
