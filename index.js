@@ -7,14 +7,7 @@ const app = express();
 const router = require('./routes/routes');
 const initializeDatabase = require('./utils/db');
 const get10Last = require('./utils/get10last');
-// const socket = require('./utils/ws');
 const socket = require('socket.io');
-
-// socket.on('connection', function connection(ws) {
-//     ws.on('message', async function message(data) {
-//         
-//     });
-// });
 
 const startApp = async () => {
     await initializeDatabase();

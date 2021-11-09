@@ -19,8 +19,7 @@
     "express": "^4.17.1",
     "mysql2": "^2.3.3-rc.0",
     "sequelize": "^6.9.0",
-    "socket.io": "^4.3.2",
-    "ws": "^8.2.3"
+    "socket.io": "^4.3.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.14"
